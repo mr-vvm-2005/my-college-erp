@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login as Parent/Guardian</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left-panel">
+        <button onclick="goBack()" class="back-btn">⬅ Back</button>
+    </div>
+
+    <div class="right-panel">
+        <img src="client_images/AEI/AEI_Logo.png" alt="Logo" class="logo">
+        <span class="role-badge parent">Parent Portal</span>
+        <h2>Login as Parent/Guardian</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username / Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <a href="#" class="forgot">Forgot password?</a>
+            <button type="submit">Login as Parent</button>
+        </form>
+        <div id="message"></div>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
