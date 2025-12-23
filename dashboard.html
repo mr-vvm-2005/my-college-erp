@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard - Aditanar Institution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Dashboard - Aditanar Educational Institution ERP Portal">
+    <title>Dashboard | Aditanar Institution</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="client_images/AEI/favicon.ico">
 </head>
+
 <body>
 
-<div class="container">
-    <div class="left-panel">
-        <div class="home-nav">
-            <button onclick="goHome()" class="home-btn">🏠 Home</button>
+    <div class="container">
+        <div class="left-panel">
+            <div class="home-nav">
+                <button onclick="goHome()" class="home-btn">🏠 Home</button>
+            </div>
+            <h2>Dashboard</h2>
+            <div class="button-list">
+                <button onclick="showSection('profile')">Profile</button>
+                <button onclick="showSection('courses')">Courses</button>
+                <button onclick="showSection('grades')">Grades</button>
+                <button onclick="showSection('attendance')">Attendance</button>
+                <button onclick="logout()">Logout</button>
+            </div>
         </div>
-        <h2>Dashboard</h2>
-        <div class="button-list">
-            <button onclick="showSection('profile')">Profile</button>
-            <button onclick="showSection('courses')">Courses</button>
-            <button onclick="showSection('grades')">Grades</button>
-            <button onclick="showSection('attendance')">Attendance</button>
-            <button onclick="logout()">Logout</button>
+
+        <div class="right-panel">
+            <img src="client_images/AEI/AEI_Logo.png" alt="Logo" class="logo">
+            <h2>Welcome to Your Dashboard</h2>
+            <div id="content">
+                <p>Select an option from the left to view details.</p>
+            </div>
         </div>
     </div>
 
-    <div class="right-panel">
-        <img src="client_images/AEI/AEI_Logo.png" alt="Logo" class="logo">
-        <h2>Welcome to Your Dashboard</h2>
-        <div id="content">
-            <p>Select an option from the left to view details.</p>
-        </div>
-    </div>
-</div>
-
-<script src="dashboard.js"></script>
+    <script src="dashboard.js"></script>
 </body>
+
 </html>
